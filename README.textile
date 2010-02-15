@@ -44,13 +44,13 @@ Result:
 h2. Sorting by custom value
 
 <pre>
-	$("ul li").sorted(
-		{
-			by: function(v) {
-				return parseInt(v.attr('data-id'));
-			}
+$("ul li").sorted(
+	{
+		by: function(v) {
+			return parseInt(v.attr('data-id'));
 		}
-	);
+	}
+);
 </pre>
 
 Result:
