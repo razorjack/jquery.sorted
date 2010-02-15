@@ -7,13 +7,14 @@ Example markup:
 	<li data-id="9">one</li>
 	<li data-id="8">two</li>
 	<li data-id="7">three</li>
-</ul>	
+</ul>
+</pre>	
 
 h2. Sorting by text value
 
-</pre>
-$("ul li").sorted();
 <pre>
+$("ul li").sorted();
+</pre>
 
 Result:
 
@@ -25,13 +26,13 @@ Result:
 
 h2. Reverse sorting
 
-</pre>
+<pre>
 $("ul li").sorted(
 	{
 		reversed: true
 	}
 );
-<pre>
+</pre>
 
 Result:
 
