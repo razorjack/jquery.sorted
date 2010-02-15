@@ -1,0 +1,62 @@
+h1. Usage
+
+Example markup:
+
+<pre>
+<ul>
+	<li data-id="9">one</li>
+	<li data-id="8">two</li>
+	<li data-id="7">three</li>
+</ul>	
+
+h2. Sorting by text value
+
+</pre>
+$("ul li").sorted();
+<pre>
+
+Result:
+
+<pre>
+<li data-id="9">one</li>
+<li data-id="7">three</li>
+<li data-id="8">two</li>
+</pre>
+
+h2. Reverse sorting
+
+</pre>
+$("ul li").sorted(
+	{
+		reversed: true
+	}
+);
+<pre>
+
+Result:
+
+<pre>
+<li data-id="8">two</li>
+<li data-id="7">three</li>
+<li data-id="9">one</li>
+</pre>
+
+h2. Sorting by custom value
+
+<pre>
+	$("ul li").sorted(
+		{
+			by: function(v) {
+				return parseInt(v.attr('data-id'));
+			}
+		}
+	);
+</pre>
+
+Result:
+
+<pre>
+<li data-id="7">three</li>
+<li data-id="8">two</li>
+<li data-id="9">one</li>
+</pre>
